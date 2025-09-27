@@ -2,8 +2,8 @@ var pos = 0;
 let pageWidth = window.innerWidth;
 
 const pacArray = [
-  ["PacMan1.png", "PacMan2.png"],  // facing right
-  ["PacMan3.png", "PacMan4.png"],  // facing left
+  ["PacMan1 (3).png", "PacMan2 (3).png"],  // facing right
+  ["PacMan3 (3).png", "PacMan4 (2).png"],  // facing left
 ];
 
 var direction = 0;
@@ -39,4 +39,5 @@ function checkPageBounds(direction, imgWidth, pos, pageWidth) {
   if (pos + imgWidth > pageWidth) direction = 1; // hit right wall
   if (pos < 0) direction = 0; // hit left wall
   return direction;
+
 }
